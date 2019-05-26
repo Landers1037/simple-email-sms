@@ -1,5 +1,6 @@
 # simple-email-sms
 一个简单的python实现的邮件服务，短信服务
+[中文文档](./README-CN.md)
 
 ### 😁Demand
 
@@ -87,7 +88,7 @@ use service.json to add your infomation
 
 `smstime` is the time you want to set for sms
 
-### ❌Log output
+### 🔴Log output
 
 once you have active or inactive your service,the log will be saved in `log.json`
 
