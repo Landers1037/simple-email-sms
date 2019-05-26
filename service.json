@@ -1,0 +1,22 @@
+{
+    "mail": "true",
+    "sms": "true",
+    "username": "xxx@163.com",
+    "password": "123456",
+    "sender": "xxx@163.com",
+    "receiver": ["xxx@qq.com"],
+    "subject": "python mail test",
+    "source": "xxx@163.com <xxx@163.com>",
+    "text": "just a email test,please ignore",
+    "smtp": "smtp.163.com",
+    "port": 25,
+    "mailtime": "6:30",
+    "account_sid": "ACc986e47ssxxxxxxx",
+    "auth_token": "d42852c86aae943e76",
+    "from_phone": "+1555555",
+    "to_phone": "+8610086",
+    "message": "this is a sms test send from xxx",
+    "smstime": "18:30"
+
+
+}
