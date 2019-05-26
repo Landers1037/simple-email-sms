@@ -32,6 +32,7 @@ def main():
 
         if data["sms"] != "true":
             logdata["sms"] = "sms status inactive"
+
     except Exception as err:
         logdata["error"] = str(err.args)
 

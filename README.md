@@ -1,10 +1,13 @@
 # simple-email-sms
 一个简单的python实现的邮件服务，短信服务
+
+also provide a sms.service to notice you about your server status
+
 [中文文档](./README-CN.md)
 
 ### 😁Demand
 
-python3.7 ,twilio ,shcedule ,twilio token
+python3.7 ,twilio ,shcedule ,twilio token，psutil
 
 ### ⚙Install
 
@@ -17,6 +20,7 @@ git clone git@github.com:Landers1037/simple-email-sms.git
 ```python
 pip install schedule
 pip install twilio
+pip install psutil
 ```
 
 get a Twilio account at  [Twilio](https://www.twilio.com/try-twilio)
@@ -29,6 +33,7 @@ use service.json to add your infomation
 {
     "mail": "true",
     "sms": "true",
+    "notice": "true",
     "username": "xxx@163.com",
     "password": "123456",
     "sender": "xxx@163.com",
@@ -38,13 +43,14 @@ use service.json to add your infomation
     "text": "just a email test,please ignore",
     "smtp": "smtp.163.com",
     "port": 25,
-    "mailtime": "06:30",
+    "mailtime": "6:30",
     "account_sid": "ACc986e47ssxxxxxxx",
     "auth_token": "d42852c86aae943e76",
     "from_phone": "+1555555",
     "to_phone": "+8610086",
     "message": "this is a sms test send from xxx",
-    "smstime": "18:30"
+    "smstime": "18:30",
+    "sysprocess": ["nginx", "python", "aria2c"]
 }
 ```
 
@@ -55,6 +61,8 @@ use service.json to add your infomation
 `mail` is true,the mail.service is active
 
 `sms` is true,the sms.service is active
+
+`notice` is true,send linux server spy log by sms
 
 `username` is your mail account
 
@@ -88,6 +96,8 @@ use service.json to add your infomation
 
 `smstime` is the time you want to set for sms
 
+`sysprocess` is the list of system process you want to spy
+
 ### 🔴Log output
 
 once you have active or inactive your service,the log will be saved in `log.json`
@@ -112,3 +122,21 @@ see log
 cat ~/simple-email-sms/log.json
 ```
 
+send server process log by sms
+
+```json
+"notice": "true",
+"sysprocess": ["nginx", "python", "aria2c"]
+```
+
+add process you want to `sysprocess`
+
+once `notice` is true,sms.service will send system log like the following,`message` will be inactive and not be send
+
+```
+Sent from your Twilio trial account
+内存占用率：37.6%
+vsftpd:ok
+aria2c:ok
+nginx:ok
+```
