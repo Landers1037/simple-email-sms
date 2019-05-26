@@ -52,22 +52,39 @@ use service.json to add your infomation
 ### 📝Instructions
 
 `mail` is true,the mail.service is active
+
 `sms` is true,the sms.service is active
+
 `username` is your mail account
+
 `password` is your mail passwd
+
 `sender` is the same as username
+
 `receiver` is the receive mailbox,it's a list
+
 `subject` is the mail theme
+
 `source` is the mail source,same as username
+
 `text` is the text you want to mail
+
 `smtp` is the default smtp address
+
 `port` for smtp use 25,for ssl use 465
+
 `mailtime` is the time your want to set for mail
+
 `account_sid` is your twilio accound_sid
+
 `auth_token` is your twilio token
+
 `from_phone` is your twilio phone number
+
 `to_phone` is your own phone number 
+
 `message` is the message you want to send by sms
+
 `smstime` is the time you want to set for sms
 
 ### ❌Log output
