@@ -40,7 +40,7 @@ pip install psutil
     "source": "xxx@163.com <xxx@163.com>",
     "text": "just a email test,please ignore",
     "smtp": "smtp.163.com",
-	"ssl": "false",
+    "ssl": "false",
     "port": 25,
     "mailtime": "06:30",
     "account_sid": "ACc986e47ssxxxxxxx",
