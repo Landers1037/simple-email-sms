@@ -5,7 +5,7 @@
 
 ### 😁需求
 
-python3.7 ,twilio ,shcedule ,twilio token，psutil
+python3.7 ,twilio ,shcedule ,twilio token,psutil
 
 ### ⚙安装
 
@@ -41,7 +41,7 @@ pip install psutil
     "text": "just a email test,please ignore",
     "smtp": "smtp.163.com",
     "port": 25,
-    "mailtime": "6:30",
+    "mailtime": "06:30",
     "account_sid": "ACc986e47ssxxxxxxx",
     "auth_token": "d42852c86aae943e76",
     "from_phone": "+1555555",
@@ -120,7 +120,7 @@ nohup python3 ~/simple-email-sms/service.py &
 cat ~/simple-email-sms/log.json
 ```
 
-启用系统状态监听短线服务
+启用系统状态监听短信服务
 
 ```json
 "notice": "true",

@@ -7,7 +7,7 @@ also provide a sms.service to notice you about your server status
 
 ### 😁Demand
 
-python3.7 ,twilio ,shcedule ,twilio token，psutil
+python3.7 ,twilio ,shcedule ,twilio token,psutil
 
 ### ⚙Install
 
@@ -43,7 +43,7 @@ use service.json to add your infomation
     "text": "just a email test,please ignore",
     "smtp": "smtp.163.com",
     "port": 25,
-    "mailtime": "6:30",
+    "mailtime": "06:30",
     "account_sid": "ACc986e47ssxxxxxxx",
     "auth_token": "d42852c86aae943e76",
     "from_phone": "+1555555",
