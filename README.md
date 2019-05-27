@@ -42,9 +42,9 @@ use service.json to add your infomation
     "source": "xxx@163.com <xxx@163.com>",
     "text": "just a email test,please ignore",
     "smtp": "smtp.163.com",
-	"ssl": "false",
+    "ssl": "false",
     "port": 25,
-    "mailtime": "6:30",
+    "mailtime": "06:30",
     "account_sid": "ACc986e47ssxxxxxxx",
     "auth_token": "d42852c86aae943e76",
     "from_phone": "+1555555",
@@ -52,6 +52,7 @@ use service.json to add your infomation
     "message": "this is a sms test send from xxx",
     "smstime": "18:30",
     "sysprocess": ["nginx", "python", "aria2c"]
+
 }
 ```
 
