@@ -40,6 +40,7 @@ pip install psutil
     "source": "xxx@163.com <xxx@163.com>",
     "text": "just a email test,please ignore",
     "smtp": "smtp.163.com",
+	"ssl": "false",
     "port": 25,
     "mailtime": "06:30",
     "account_sid": "ACc986e47ssxxxxxxx",
@@ -60,7 +61,7 @@ pip install psutil
 
 `sms` 为true，短信服务开启
 
-notice` 为true，发送系统状态监听短信
+`notice` 为true，发送系统状态监听短信
 
 `username` 邮箱地址
 
@@ -77,6 +78,8 @@ notice` 为true，发送系统状态监听短信
 `text` 要发送的文字
 
 `smtp` smtp服务器地址
+
+`ssl`默认false，为true表示通过smtp_ssl通信，端口465
 
 `port` smtp 端口25,ssl 端口465
 

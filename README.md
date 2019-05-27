@@ -42,8 +42,9 @@ use service.json to add your infomation
     "source": "xxx@163.com <xxx@163.com>",
     "text": "just a email test,please ignore",
     "smtp": "smtp.163.com",
+	"ssl": "false",
     "port": 25,
-    "mailtime": "06:30",
+    "mailtime": "6:30",
     "account_sid": "ACc986e47ssxxxxxxx",
     "auth_token": "d42852c86aae943e76",
     "from_phone": "+1555555",
@@ -79,6 +80,8 @@ use service.json to add your infomation
 `text` is the text you want to mail
 
 `smtp` is the default smtp address
+
+`ssl` is true,mail will use smtp_ssl,then port must be 465
 
 `port` for smtp use 25,for ssl use 465
 

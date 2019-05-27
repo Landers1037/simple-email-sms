@@ -23,6 +23,7 @@ class pymail:
     receiver = data["receiver"]
     text = data["text"]
     subject = data["subject"]
+    sslflag = data["ssl"]
 
     msg = MIMEMultipart('mixed')
     msg['Subject'] = subject
@@ -33,7 +34,10 @@ class pymail:
     msg.attach(text_plain)
 
     def email(self):
-        smtp = smtplib.SMTP(self.data["smtp"], self.data["port"])
+        if self.sslflag == "true":
+            smtp = smtplib.SMTP_SSL(self.data["smtp"], self.data["port"])
+        else:
+            smtp = smtplib.SMTP(self.data["smtp"], self.data["port"])
         smtp.login(self.username, self.password)
         smtp.sendmail(self.sender, self.receiver, self.msg.as_string())
         smtp.quit()
