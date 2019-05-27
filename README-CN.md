@@ -10,7 +10,13 @@ python3.7 ,twilio ,shcedule ,twilio token,psutil
 ### ⚙安装
 
 ```shell
-git clone git@github.com:Landers1037/simple-email-sms.git
+git clone https://github.com/Landers1037/simple-email-sms.git
+```
+
+或者使用一键安装脚本 `start.sh`
+
+```shell
+./start.sh
 ```
 
 

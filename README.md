@@ -12,7 +12,13 @@ python3.7 ,twilio ,shcedule ,twilio token,psutil
 ### ⚙Install
 
 ```shell
-git clone git@github.com:Landers1037/simple-email-sms.git
+git clone https://github.com/Landers1037/simple-email-sms.git
+```
+
+or you can use one step shell `start.sh`
+
+```shell
+./start.sh
 ```
 
 
@@ -111,13 +117,13 @@ once an error happend,it will be saved in `log.json`
 ### 🤪Start
 
 ```bash
-python3 ~/simple-email-sms/service.py
+python3 /home/pyservice/simple-email-sms/service.py
 ```
 
 to run in background
 
 ```bash
-nohup python3 ~/simple-email-sms/service.py &
+nohup python3 /home/pyservice/simple-email-sms/service.py &
 ```
 
 see log
